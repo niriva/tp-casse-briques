@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://do5gsbjv7ugl7"]
 
+[ext_resource type="PackedScene" uid="uid://b8gdrejq8m5an" path="res://Raquette/raquette.tscn" id="1_ig7tw"]
+
 [node name="Node2D" type="Node2D" unique_id=1752684578]
 
 [node name="Label" type="Label" parent="." unique_id=805842172]
@@ -8,3 +10,6 @@ offset_top = 304.0
 offset_right = 625.0
 offset_bottom = 327.0
 text = "hello"
+
+[node name="Raquette" parent="." unique_id=111587862 instance=ExtResource("1_ig7tw")]
+position = Vector2(603, 576)
