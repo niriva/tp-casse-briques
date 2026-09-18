@@ -3,18 +3,20 @@
 [ext_resource type="Texture2D" uid="uid://cby4cb1jp2170" path="res://Raquette/skin_raquette_a.tres" id="1_awm8m"]
 [ext_resource type="Script" uid="uid://b05eki3uqvs52" path="res://Raquette/control_joueur.gd" id="2_kevw6"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_f420a"]
-size = Vector2(268.5, 52)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kevw6"]
+size = Vector2(108, 28)
 
 [node name="Raquette" type="CharacterBody2D" unique_id=111587862]
 motion_mode = 1
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=421277759]
-scale = Vector2(4.2656245, 3.3235295)
+position = Vector2(1.0000153, 5)
+scale = Vector2(1.7578124, 1.7794118)
 texture = ExtResource("1_awm8m")
 
 [node name="ControlJoueur" type="Node" parent="." unique_id=967941869]
 script = ExtResource("2_kevw6")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1099701746]
-shape = SubResource("RectangleShape2D_f420a")
+position = Vector2(-1, 4)
+shape = SubResource("RectangleShape2D_kevw6")

@@ -1,15 +1,55 @@
 [gd_scene format=3 uid="uid://do5gsbjv7ugl7"]
 
 [ext_resource type="PackedScene" uid="uid://b8gdrejq8m5an" path="res://Raquette/raquette.tscn" id="1_ig7tw"]
+[ext_resource type="PackedScene" uid="uid://cwh0qvo2erufn" path="res://balle/balle.tscn" id="2_0xm2m"]
+[ext_resource type="PackedScene" uid="uid://c2sj5br7nbyv0" path="res://Fosse/fosse.tscn" id="3_h2yge"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_0xm2m"]
+friction = 0.0
+bounce = 1.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0xm2m"]
+size = Vector2(1169, 24)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_h2yge"]
+size = Vector2(48, 659)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1bvp3"]
+size = Vector2(58, 654)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lquwl"]
+size = Vector2(1220, 50)
 
 [node name="Node2D" type="Node2D" unique_id=1752684578]
 
-[node name="Label" type="Label" parent="." unique_id=805842172]
-offset_left = 585.0
-offset_top = 304.0
-offset_right = 625.0
-offset_bottom = 327.0
-text = "hello"
-
 [node name="Raquette" parent="." unique_id=111587862 instance=ExtResource("1_ig7tw")]
-position = Vector2(603, 576)
+position = Vector2(594, 563)
+
+[node name="Balle2" parent="." unique_id=1912709026 instance=ExtResource("2_0xm2m")]
+position = Vector2(573, 284)
+physics_material_override = SubResource("PhysicsMaterial_0xm2m")
+contact_monitor = true
+
+[node name="Mur du haut" type="StaticBody2D" parent="." unique_id=544858524]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Mur du haut" unique_id=564054901]
+position = Vector2(574.5, 2)
+shape = SubResource("RectangleShape2D_0xm2m")
+
+[node name="Mur de gauche" type="StaticBody2D" parent="." unique_id=528261650]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Mur de gauche" unique_id=71393178]
+position = Vector2(-23, 319.5)
+shape = SubResource("RectangleShape2D_h2yge")
+
+[node name="Mur de droite" type="StaticBody2D" parent="." unique_id=1470349062]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Mur de droite" unique_id=27652163]
+position = Vector2(1180, 317)
+shape = SubResource("RectangleShape2D_1bvp3")
+
+[node name="Fosse" parent="." unique_id=1274684914 instance=ExtResource("3_h2yge")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Fosse" unique_id=171640587]
+position = Vector2(600, 675)
+shape = SubResource("RectangleShape2D_lquwl")
