@@ -6,11 +6,9 @@
 size = Vector2(1577.75, 89)
 
 [node name="Fosse" type="Area2D" unique_id=1274684914]
+script = ExtResource("1_cr43v")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1631571288]
 shape = SubResource("RectangleShape2D_88ots")
 
-[node name="fosse_detector" type="Node" parent="." unique_id=1190040140]
-script = ExtResource("1_cr43v")
-
-[connection signal="body_entered" from="." to="fosse_detector" method="_on_fosse_body_entered"]
+[connection signal="body_entered" from="." to="." method="_on_fosse_body_entered"]

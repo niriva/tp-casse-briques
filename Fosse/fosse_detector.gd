@@ -14,4 +14,4 @@ func _process(delta: float) -> void:
 
 func _on_fosse_body_entered(body: Node2D) -> void:
 	if body.is_in_group("balle")	:
-		get_tree().change_scene_to_file("res://ecran/ecran_defaite.tscn")
+		get_tree().change_scene_to_file("res://ecran_defaite.tscn")
