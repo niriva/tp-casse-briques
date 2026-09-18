@@ -17,9 +17,6 @@ size = Vector2(48, 659)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1bvp3"]
 size = Vector2(58, 654)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_lquwl"]
-size = Vector2(1220, 50)
-
 [node name="Node2D" type="Node2D" unique_id=1752684578]
 
 [node name="Raquette" parent="." unique_id=111587862 instance=ExtResource("1_ig7tw")]
@@ -49,7 +46,4 @@ position = Vector2(1180, 317)
 shape = SubResource("RectangleShape2D_1bvp3")
 
 [node name="Fosse" parent="." unique_id=1274684914 instance=ExtResource("3_h2yge")]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Fosse" unique_id=171640587]
-position = Vector2(600, 675)
-shape = SubResource("RectangleShape2D_lquwl")
+position = Vector2(598, 702)

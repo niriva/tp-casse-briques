@@ -9,17 +9,15 @@ bounce = 1.0
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_50dfo"]
 
-[node name="Balle" type="RigidBody2D" unique_id=1912709026]
+[node name="Balle" type="RigidBody2D" unique_id=1912709026 groups=["balle"]]
 physics_material_override = SubResource("PhysicsMaterial_eobpy")
 gravity_scale = 0.0
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=219235937]
-position = Vector2(-1.9999924, 1.25)
 scale = Vector2(2.2499998, 2.0555556)
 texture = ExtResource("1_eobpy")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1149105549]
-position = Vector2(-2, 1.25)
 shape = SubResource("CircleShape2D_50dfo")
 
 [node name="balle_rebondissement" type="Node" parent="." unique_id=1860621368]
