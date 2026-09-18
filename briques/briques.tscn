@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://cbjeppykaq3t"]
+
+[ext_resource type="Texture2D" uid="uid://dgubbj861h4no" path="res://assets/sprite/breakout_pieces.png" id="1_vbqjf"]
+[ext_resource type="PackedScene" uid="uid://d01bs6xqkv4qw" path="res://briques/detecteur balle/detecteur_balle.tscn" id="2_cfv43"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cfv43"]
+atlas = ExtResource("1_vbqjf")
+region = Rect2(155.62256, 27.878395, 32.74292, 16.421104)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vbqjf"]
+size = Vector2(89, 22)
+
+[node name="StaticBody2D" type="StaticBody2D" unique_id=873267494]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1495221598]
+scale = Vector2(2.7343752, 1.375)
+texture = SubResource("AtlasTexture_cfv43")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1584390998]
+shape = SubResource("RectangleShape2D_vbqjf")
+
+[node name="detecteur_balle" parent="." unique_id=1600931325 instance=ExtResource("2_cfv43")]
