@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://d01bs6xqkv4qw"]
 
-[ext_resource type="Script" uid="uid://sp8i0t8fo5jj" path="res://briques/detecteur balle/collision_balle.gd" id="1_4m61o"]
+[ext_resource type="Script" uid="uid://sp8i0t8fo5jj" path="res://Générateur briques/briques/detecteur balle/collision_balle.gd" id="1_4m61o"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gupta"]
 size = Vector2(89, 22)

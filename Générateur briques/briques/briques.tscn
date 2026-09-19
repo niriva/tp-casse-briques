@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cbjeppykaq3t"]
 
 [ext_resource type="Texture2D" uid="uid://dgubbj861h4no" path="res://assets/sprite/breakout_pieces.png" id="1_vbqjf"]
-[ext_resource type="PackedScene" uid="uid://d01bs6xqkv4qw" path="res://briques/detecteur balle/detecteur_balle.tscn" id="2_cfv43"]
+[ext_resource type="PackedScene" uid="uid://d01bs6xqkv4qw" path="res://Générateur briques/briques/detecteur balle/detecteur_balle.tscn" id="2_cfv43"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_cfv43"]
 atlas = ExtResource("1_vbqjf")

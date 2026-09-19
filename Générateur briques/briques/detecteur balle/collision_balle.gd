@@ -13,6 +13,6 @@ func _process(_delta: float) -> void:
 
 func _on_area_2d_body_entered(body: Node2D) -> void:
 	if body.is_in_group("balle"):
-		get_parent().get_parent().queue_free() 
+		get_parent().get_parent().call_deferred("queue_free")
 		if (get_tree().get_nodes_in_group("brique").size()==0) :      #le nb restant de briques
 			get_tree().change_scene_to_file("res://ecran_victoire.tscn")

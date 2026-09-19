@@ -3,7 +3,9 @@
 [ext_resource type="PackedScene" uid="uid://b8gdrejq8m5an" path="res://Raquette/raquette.tscn" id="1_ig7tw"]
 [ext_resource type="PackedScene" uid="uid://cwh0qvo2erufn" path="res://balle/balle.tscn" id="2_0xm2m"]
 [ext_resource type="PackedScene" uid="uid://c2sj5br7nbyv0" path="res://Fosse/fosse.tscn" id="3_h2yge"]
-[ext_resource type="PackedScene" uid="uid://cbjeppykaq3t" path="res://briques/briques.tscn" id="4_1bvp3"]
+[ext_resource type="PackedScene" uid="uid://cbjeppykaq3t" path="res://Générateur briques/briques/briques.tscn" id="4_1bvp3"]
+[ext_resource type="PackedScene" uid="uid://cwnt38sy5eg1f" path="res://Générateur briques/générateur_briques.tscn" id="4_lquwl"]
+[ext_resource type="Script" uid="uid://bccq6das74oxy" path="res://generateur_briques.gd" id="6_7mycd"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_0xm2m"]
 friction = 0.0
@@ -53,6 +55,11 @@ shape = SubResource("RectangleShape2D_1bvp3")
 [node name="Fosse" parent="." unique_id=1274684914 instance=ExtResource("3_h2yge")]
 position = Vector2(598, 702)
 
-[node name="StaticBody2D" parent="." unique_id=873267494 instance=ExtResource("4_1bvp3")]
+[node name="Générateur briques" parent="." unique_id=967823190 instance=ExtResource("4_lquwl")]
+
+[node name="StaticBody2D" parent="Générateur briques" unique_id=873267494 instance=ExtResource("4_1bvp3")]
 position = Vector2(572, 233)
 physics_material_override = SubResource("PhysicsMaterial_1bvp3")
+
+[node name="Node" type="Node" parent="Générateur briques" unique_id=1742296131]
+script = ExtResource("6_7mycd")
