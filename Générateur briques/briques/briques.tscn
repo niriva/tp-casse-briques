@@ -10,7 +10,7 @@ region = Rect2(155.62256, 27.878395, 32.74292, 16.421104)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vbqjf"]
 size = Vector2(89, 22)
 
-[node name="StaticBody2D" type="StaticBody2D" unique_id=873267494]
+[node name="StaticBody2D" type="StaticBody2D" unique_id=873267494 groups=["brique"]]
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1495221598]
 scale = Vector2(2.7343752, 1.375)

@@ -4,7 +4,7 @@ extends Node
 
 func _ready() -> void:
 	var parent = get_parent()
-	parent.linear_velocity = Vector2(0, 1) * vitesse
+	parent.linear_velocity = Vector2(1, 1) * vitesse
 	
 	
 	
