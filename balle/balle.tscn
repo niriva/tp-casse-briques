@@ -12,6 +12,8 @@ bounce = 1.0
 [node name="Balle" type="RigidBody2D" unique_id=1912709026 groups=["balle"]]
 physics_material_override = SubResource("PhysicsMaterial_eobpy")
 gravity_scale = 0.0
+linear_damp_mode = 1
+angular_damp_mode = 1
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=219235937]
 scale = Vector2(2.2499998, 2.0555556)
